@@ -5,9 +5,6 @@ Ejercicio B: Menú interactivo con while
 # Mostrar un menú con opciones hasta que el usuario elija "Salir"
 # Ej: 1. Saludar  2. Mostrar fecha  3. Salir
 '''
-
-
-
 def par_number(limit):
     total_pares = 0
     list_par = [] #Se crea una lista para ir guardando los numeros pares
