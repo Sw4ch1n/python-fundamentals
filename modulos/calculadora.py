@@ -28,10 +28,7 @@ def restar(a,b):
     return a - b #Es una forma mas facil y con menos lineas de devolver un valor
 
 def multiplicar(a,b):
-    resultado_mult = a * b
-    return resultado_mult
+    return a * b
 
 def dividir(a,b):
-    resultado_div = a / b
-    print(resultado_div)
-    return resultado_div
+    return a / b
