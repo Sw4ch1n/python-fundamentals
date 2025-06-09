@@ -5,6 +5,9 @@ Ejercicio B: Menú interactivo con while
 # Mostrar un menú con opciones hasta que el usuario elija "Salir"
 # Ej: 1. Saludar  2. Mostrar fecha  3. Salir
 '''
+from time import strftime
+
+
 def par_number(limit):
     total_pares = 0
     list_par = [] #Se crea una lista para ir guardando los numeros pares
@@ -18,13 +21,14 @@ def par_number(limit):
 
 def user_menu():
     while True: # Si se coloca un While True se hace una condicion infinita hasta que se termine con un break, se puede usar una condicion seguido del While donde si la condicion no se cumple se vuelve While False y se termina
-        choise = int(input("\nSelecciona una opcion:\n1. Saludar\n2. Mostrar fecha\n3. Contar Impares\n4.Salir\n")) #siendo que es True el input siempre se repetira hasta llegar al break
+        choise = int(input("\nSelecciona una opcion:\n1. Saludar\n2. Mostrar fecha\n3. Contar Impares\n4. Salir\n")) #siendo que es True el input siempre se repetira hasta llegar al break
         
         if  choise == 1:
             print("\nHola como estas\n")
              
         elif choise == 2:
-            print("\nMas adelante se muestra la fecha\n")
+            
+            print(f"\n{strftime("%a, %d %b %Y")}\n")
             
         elif choise == 3:
             number_range = int(input("\nHasta que numero quieres saber cuantos pares hay:\n"))
@@ -35,7 +39,6 @@ def user_menu():
             break    
         else:
             print("Numero invalido, selecciona otra opcion")
-            return
 
 
 
